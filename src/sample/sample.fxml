@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+       <TextField prefWidth="100" promptText="Type word/root" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="2" />
+      <RadioButton mnemonicParsing="false" selected="true" text="By Word" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="filter" />
+         </toggleGroup></RadioButton>
+       <RadioButton mnemonicParsing="false" text="By Root" toggleGroup="$filter" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+       
+      <TableView prefHeight="350.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <columns>
+          <TableColumn prefWidth="250.0" text="Couplets" />
+          <TableColumn prefWidth="100.0" text="Poem" />
+        </columns>
+      </TableView>
+
+
+   </children>
+    
+</GridPane>
